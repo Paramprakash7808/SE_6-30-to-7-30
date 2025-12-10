@@ -1,0 +1,39 @@
+15)SELECT * FROM data
+
+16)SELECT name FROM data
+
+17)SELECT * FROM data WHERE id = 101
+
+18)SELECT id FROM data ORDER by id ASC
+
+19)SELECT id FROM data ORDER by id DESC
+
+20)SELECT MAX(salary) FROM data
+
+21)SELECT MIN(salary) FROM data
+
+22)SELECT SUM(salary) FROM data
+
+23)SELECT AVG(salary) FROM data
+
+24)SELECT COUNT(salary) FROM data
+
+25)SELECT salary FROM data LIMIT 2
+
+26)SELECT * FROM data ORDER BY salary ASC LIMIT 2
+
+27)SELECT * FROM data ORDER BY salary DESC LIMIT 2
+
+28)SELECT UCASE(name) FROM data
+
+29)SELECT LCASE(name) FROM data
+
+30)SELECT MID(name,1,3) FROM data
+
+31)SELECT LENGTH(name) FROM data
+
+32)SELECT ROUND(salary) FROM data
+
+33)SELECT name,NOW() AS DateTime FROM data
+
+34)SELECT name, FORMAT(NOW(),'DD-MM-YYYY') AS Date FROM data
