@@ -1,0 +1,9 @@
+35)SELECT * FROM data JOIN student on data.id = student.id
+
+36)SELECT * FROM data LEFT JOIN student ON data.id = student.id
+
+37)SELECT * FROM data RIGHT JOIN student ON data.id = student.id
+
+38)SELECT * FROM data LEFT JOIN student ON data.id = student.id
+   UNION
+   SELECT * FROM data RIGHT JOIN student ON data.id = student.id
