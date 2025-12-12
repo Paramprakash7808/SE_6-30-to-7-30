@@ -1,0 +1,23 @@
+39)CREATE VIEW data_view AS SELECT id,name from data
+
+40)DELIMITER //
+
+CREATE PROCEDURE deleteproc(INOUT myid int)
+
+BEGIN
+	DELETE FROM data WHERE id = myid;
+END //
+
+DELIMITER ;
+
+41)DELIMITER $$
+
+CREATE TRIGGER `Before Subscriber Insert` BEFORE INSERT ON `Subcribers` FOR EACH ROW
+
+BEGIN
+
+INSERT INTO data SET action_performed = `Inserted a New Subscriber`,subcriber_name = new.fname;
+
+END $$
+
+DELIMITER ;
