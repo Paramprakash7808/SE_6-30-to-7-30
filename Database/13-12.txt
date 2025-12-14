@@ -1,0 +1,46 @@
+42)USE DATABASE clg
+
+43)SELECT DISTINCT name FROM student
+
+44)DESC book
+
+45)SELECT COUNT(id),country FROM student GROUP BY country
+
+46)SELECT COUNT(id),country FROM student GROUP BY country HAVING COUNT(id) > 1
+
+47)SELECT * FROM student WHERE country IN('India')
+
+48)SELECT * FROM student WHERE country = 'India' AND name LIKE 'A%'
+
+49)SELECT * FROM student WHERE country = 'India' OR country = 'Uk'
+
+50)SELECT * FROM student WHERE id BETWEEN 100 and 110
+
+51)CREATE TABLE book(Id int PRIMARY KEY AUTO_INCREMENT,Title varchar(50),Author varchar(30),Date varchar(20))
+
+52)Insert into book values (1, 'Java', 'Ajay', '2015-09-01'), (2, 'JFreeCharts', 'Mayur', '2016-05-01'),(3, 'JavaSprings', 'Sahil', '2017-05-01'),(4, 'Android', 'Ashu', '2018-03-01'),(5, 'Cassandra', 'Avi', '2019-04-06')
+
+53)CREATE TABLE backup(id int,Title varchar(50),Author varchar(30),Date varchar(20))
+
+54)DELIMITER //
+CREATE PROCEDURE Proc()
+BEGIN
+DECLARE done int DEFAULT 0;
+DECLARE bookId INTEGER;
+DECLARE bookTitle,bookAuthor,bookDate varchar(30);
+DECLARE cur CURSOR FOR SELECT * FROM book;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+OPEN cur;
+label: LOOP
+FETCH cur INTO bookId,bookTitle,bookAuthor,bookDate;
+INSERT INTO backup VALUES(bookId,bookTitle,bookAuthor,bookDate);
+IF done = 1 THEN LEAVE label;
+END IF;
+END LOOP;
+CLOSE cur;
+END //
+DELIMITER ;
+
+55)CALL Proc;
+
+56)SELECT * FROM backup
