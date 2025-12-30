@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="kDHRGjT01rbzDG5Wt1B_">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Start" vertex="1">
+          <mxGeometry height="54" width="95" x="387" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="User accesses registration page" vertex="1">
+          <mxGeometry height="78" width="260" x="304" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="User enters personal details" vertex="1">
+          <mxGeometry height="78" width="260" x="304" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-4" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Are details valid?" vertex="1">
+          <mxGeometry height="176" width="176" x="231" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="User submits registration" vertex="1">
+          <mxGeometry height="54" width="239" x="179" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Show error message" vertex="1">
+          <mxGeometry height="54" width="203" x="468" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Send confirmation email" vertex="1">
+          <mxGeometry height="54" width="235" x="181" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="End" vertex="1">
+          <mxGeometry height="54" width="86" x="256" y="878" as="geometry" />
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-9" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-10" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-11" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.23;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="319" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-12" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.42;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-5" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="299" y="633" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-13" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-4" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.96;entryX=0.26;entryY=0.01;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-6" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="633" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-14" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.53;exitY=0.01;entryX=0.85;entryY=1;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="584" y="633" />
+              <mxPoint x="584" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-15" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjRLV1okGbXvCWv-MS2b-16" edge="1" parent="1" source="SjRLV1okGbXvCWv-MS2b-7" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" target="SjRLV1okGbXvCWv-MS2b-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

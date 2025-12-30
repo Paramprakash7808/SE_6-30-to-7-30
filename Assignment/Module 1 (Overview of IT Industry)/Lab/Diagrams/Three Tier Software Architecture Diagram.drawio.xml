@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="6ne0mrFR_1IBzYNxOv-b">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M71o_x02OIGpb4zD22lG-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" value="Presentation Tier" vertex="1">
+          <mxGeometry height="200" width="180" x="35" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-2" parent="M71o_x02OIGpb4zD22lG-1" style="shape=mxgraph.basic.browser;html=1;whiteSpace=wrap;" value="Web Browser / Client" vertex="1">
+          <mxGeometry height="100" width="140" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" value="Application Tier" vertex="1">
+          <mxGeometry height="200" width="300" x="285" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-4" parent="M71o_x02OIGpb4zD22lG-3" style="shape=mxgraph.basic.server;html=1;whiteSpace=wrap;" value="Web Server" vertex="1">
+          <mxGeometry height="100" width="120" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-5" parent="M71o_x02OIGpb4zD22lG-3" style="shape=mxgraph.basic.server;html=1;whiteSpace=wrap;" value="Application Server" vertex="1">
+          <mxGeometry height="100" width="120" x="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" value="Data Tier" vertex="1">
+          <mxGeometry height="200" width="180" x="635" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-7" parent="M71o_x02OIGpb4zD22lG-6" style="shape=mxgraph.basic.database;html=1;whiteSpace=wrap;" value="Database Server" vertex="1">
+          <mxGeometry height="100" width="140" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-8" edge="1" parent="1" source="M71o_x02OIGpb4zD22lG-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="M71o_x02OIGpb4zD22lG-4" value="HTTP/HTTPS">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="225" y="270" as="sourcePoint" />
+            <mxPoint x="285" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-9" edge="1" parent="1" source="M71o_x02OIGpb4zD22lG-4" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="M71o_x02OIGpb4zD22lG-5" value="Internal API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="385" y="270" as="sourcePoint" />
+            <mxPoint x="435" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M71o_x02OIGpb4zD22lG-10" edge="1" parent="1" source="M71o_x02OIGpb4zD22lG-5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="M71o_x02OIGpb4zD22lG-7" value="Database Protocol">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="585" y="270" as="sourcePoint" />
+            <mxPoint x="635" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="jPIwykazcH0nefRpsGVM">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z7jreN_V7zdaGOCySckz-8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Client" vertex="1">
+          <mxGeometry height="376" width="150" x="130" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Internet" vertex="1">
+          <mxGeometry height="376" width="150" x="366" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" value="Server" vertex="1">
+          <mxGeometry height="376" width="150" x="592" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-11" edge="1" parent="1" source="z7jreN_V7zdaGOCySckz-8" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="z7jreN_V7zdaGOCySckz-9" value="Send Data Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="332" y="219" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-12" edge="1" parent="1" source="z7jreN_V7zdaGOCySckz-9" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" target="z7jreN_V7zdaGOCySckz-10" value="Forward Data Request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="563" y="273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-13" edge="1" parent="1" source="z7jreN_V7zdaGOCySckz-10" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" target="z7jreN_V7zdaGOCySckz-9" value="Send Data Response">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="566" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z7jreN_V7zdaGOCySckz-14" edge="1" parent="1" source="z7jreN_V7zdaGOCySckz-9" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" target="z7jreN_V7zdaGOCySckz-8" value="Forward Data Response">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="335" y="381" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
